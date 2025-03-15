@@ -873,9 +873,7 @@ color: rgba(46, 47, 66, 0.4);
     /*#region mobile-menu*/
 .mobile-menu {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+   
     top: 0;
     left: 0;
     width: 100%;
@@ -987,12 +985,7 @@ color: #2e2f42;
         justify-content: center;
         transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
-        /*.icon-footer-lin:hover,
-        .icon-footer-lin:focus {
-           background-color: #31d0aa;
-        }*/
-        
+    
         .mob-icon {
         background-color: #4d5ae5;
         fill: var(--ic-color);
@@ -1011,19 +1004,4 @@ color: #2e2f42;
         }
     /* endregion mobile-menu*/
     
-   
-
-   /* .close-btn:hover,
-    .close-btn:focus {
-        fill: #fff;
-        background-color: #404bbf;
-        border: none;  
-    }
-    .close-btn-icon {
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .close-btn-icon:hover,
-    .close-btn-icon:focus {
-        fill: #ffffff;
-    }
+ 
