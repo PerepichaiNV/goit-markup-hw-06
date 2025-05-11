@@ -1291,7 +1291,7 @@ color: var(--white);
 /* #region mob menu */
 .mobile-menu-wrap {
     background-color: var(--white);
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
    width: 100%;
