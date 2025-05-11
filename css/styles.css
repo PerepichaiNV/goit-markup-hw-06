@@ -272,7 +272,7 @@ display: flex;
 
 @media (min-resolution: 192dpi) {
     .hero { 
-        background-image: url("../images/mobile_hero@2x.jpg");
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url("../images/mobile_hero@2x.jpg");
 }
 }
 
@@ -292,7 +292,7 @@ display: flex;
 
 @media (min-resolution: 192dpi) {
     .hero { 
-        background-image: url("../images/tablet_hero@2x.jpg");
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url("../images/tablet_hero@2x.jpg");
 }
 }
 }
@@ -311,7 +311,7 @@ display: flex;
         }
     @media (min-resolution: 192dpi) {
     .hero { 
-        background-image: url("../images/bg_hero@2x.jpg");
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url("../images/bg_hero@2x.jpg");
 }
 }
 }
@@ -376,10 +376,16 @@ background-color: #404bbf;
 }
 /* #endregion hero */
 /* #region benefits */
+
 .benefits {
-    
+    padding: 96px 0;
+}
+
+@media  only screen and (min-width:1158px) {
+.benefits {
     padding: 120px 0;
 }
+} 
 
 .visually-hidden 
 {
@@ -530,8 +536,15 @@ color: #434455;
 /* #region Our Team */
 .team 
 {background-color: #F4F4FD;
-    padding-top: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+@media  only screen and (min-width:1158px) {
+   .team 
+{   padding-top: 120px;
     padding-bottom: 120px;
+}
 }
 
 .team-title {
@@ -668,6 +681,7 @@ margin-bottom: 72px;
 .portfolio-list {
     display: flex;
     flex-direction: column;
+    gap: 48px;
   }
 
 
@@ -675,11 +689,11 @@ margin-bottom: 72px;
     .portfolio-list {
         display: flex;
         column-gap: 24px;
+        row-gap: 72px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-       
-    }}
+           }}
 
 @media  only screen and (min-width:1158px) {
     .portfolio-list {
@@ -803,7 +817,8 @@ color: #434455;
 
 
 .logo-style {   
-        font-weight: 700;
+       font-family: "Raleway", sans-serif; 
+    font-weight: 700;
         font-size: 18px;
         line-height: 1.17;
         letter-spacing: 0.03em;
@@ -816,6 +831,7 @@ color: #434455;
 
 @media  only screen and (min-width:768px) {
     .logo-style {   
+        font-family: "Raleway", sans-serif;
         font-weight: 700;
         font-size: 18px;
         line-height: 1.17;
@@ -829,6 +845,7 @@ color: #434455;
 
 
 .logo-style-footer {
+font-family: "Raleway", sans-serif;
 font-weight: 700;
 font-size: 18px;
 line-height: 1.17;
@@ -942,7 +959,6 @@ text-align:start;
     gap: 24px;
     }
 }
-
 
 .buttom-primary {
 border-radius: 4px;
@@ -1272,7 +1288,7 @@ color: var(--white);
 }
 
 .mobile-menu-wrap {
-    background-color:   var(--white);
+    background-color: var(--white);
     position: absolute;
     top: 0;
     right: 0;
@@ -1282,7 +1298,7 @@ color: var(--white);
 }
 
 .header-mob-menu {
-    width: 151px;
+    width:100%;
     height: 100%;
     background-color:var(--white);
     justify-content: space-between;
@@ -1359,7 +1375,7 @@ color: var(--text-color);
 }
 
 .mob-icon-list {
-     display: flex;
+    display: flex;
     gap: 40px;
     width: 280px;
     }
